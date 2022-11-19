@@ -46,10 +46,11 @@ Q5. What are variable and how can we declare them?
 Ans : Variable can be said as containers with data values.
 
 We can declare them like
-
+'''
 a=7
 
 str=’abc’
+'''
 
 Q6. How can we take an input from the user in Python?
 
