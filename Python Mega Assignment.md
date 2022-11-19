@@ -149,15 +149,15 @@ Q17. Write a code to take a number as an input from the user and check if the nu
 
 Ans :
 ```python:
-` `x=input("Enter the number")
+ x=input("Enter the number")
 
 if ((int(x)%2) == 1):
 
-`    `print("Odd")
+    print("Odd")
 
 else:
 
-`    `print("Even")
+    print("Even")
 ```
 
 Q18. What are boolean operator?
@@ -218,11 +218,11 @@ x=input("Enter age")
 
 if int(x)>=18:
 
-`    `print(" I can vote")
+    print(" I can vote")
 
 else:
 
-`    `print(" I can't vote")
+    print(" I can't vote")
 
 ```
 Q23. Write a code that displays the sum of all the even numbers from the given list.
@@ -240,7 +240,7 @@ numbers = [12, 75, 150, 180, 145, 525, 50]
 
 for x in range(len(numbers)):
 
-`    `print(numbers[x])
+    print(numbers[x])
 ```
 
 Q24. Write a code to take 3 numbers as an input from the user and display the greatest no as output.
@@ -254,15 +254,15 @@ num3 = input()
 
 if (num1 >= num2) and (num1 >= num3):
 
-`   `largest = num1
+   largest = num1
 
 elif (num2 >= num1) and (num2 >= num3):
 
-`   `largest = num2
+   largest = num2
 
 else:
 
-`   `largest = num3
+   largest = num3
 
 print("The largest number is", largest)
 
@@ -290,17 +290,17 @@ for x in range(len(numbers)):
 
 
 
-`        `if  numbers[x]>500:
+        if  numbers[x]>500:
 
-`            `break
+            break
 
-`        `elif numbers[x]>150:
+        elif numbers[x]>150:
 
-`            `continue
+            continue
 
-`        `elif numbers[x]%5==0:
+        elif numbers[x]%5==0:
 
-`            `print(numbers[x])
+            print(numbers[x])
 
 ```
 
@@ -318,7 +318,7 @@ Q27. How can we access the string using its index?
 Ans:
 ```python:
 Name="Sidharth"
-print(Name[5]) //Here we are specifying the index location to print
+print(Name[5]) #Here we are specifying the index location to print
 
 ```
 
@@ -377,6 +377,36 @@ print(string)
 
 Q34. What is a list in Python?
 Ans: 
+Lists are used to store multiple items in a single variable.
+
+Q35. How can you create a list in Python?
+Ans:
+```python:
+list=["a","b","c"]
+```
+
+Q36. How can we access the elements in a list?
+Ans:
+```python:
+list=["a","b","c"]
+print(list[1])
+```
+
+Q37. Write a code to access the word "iNeuron" from the given list.
+lst = [1,2,3,"Hi",[45,54, "iNeuron"], "Big Data"]
+Ans:
+```python:
+list = [1,2,3,"Hi",[45,54, "iNeuron"], "Big Data"]
+print(list[4][2])
+```
+
+Q38. Take a list as an input from the user and find the length of the list.
+Ans:
+```python:
+
+
+
+
 
 
 
