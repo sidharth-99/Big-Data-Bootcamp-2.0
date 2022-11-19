@@ -1,4 +1,4 @@
-Assignment - 2
+Python Mega Assignment
 
 Q1. Why do we call Python as a general purpose and high-level programming language?
 
@@ -303,6 +303,84 @@ for x in range(len(numbers)):
 `            `print(numbers[x])
 
 ```
+
+Q26. What is a string? How can we declare string in Python?
+
+Ans: Strings in Python are arrays of bytes representing unicode characters.
+
+Syntax:
+```python:
+Name="Sidharth"
+```
+
+Q27. How can we access the string using its index?
+
+Ans:
+```python:
+Name="Sidharth"
+print(Name[5]) //Here we are specifying the index location to print
+
+```
+
+Q28. Write a code to get the desired output of the following
+
+string = "Big Data iNeuron"
+desired_output = "iNeuron"
+
+Ans:
+```python:
+string = "Big Data iNeuron"
+print(string[9:])
+```
+
+Q29. Write a code to get the desired output of the following
+
+string = "Big Data iNeuron"
+desired_output = "norueNi"
+
+Ans:
+```python:
+string = "Big Data iNeuron"
+print(string[:-8:-1])
+```
+
+Q30. Reverse the string given in the above question.
+Ans:
+```python:
+string = "Big Data iNeuron"
+print(string[::-1])
+```
+
+Q31. How can you delete entire string at once?
+Ans:
+We can delete the entire using the keyword del.
+```python:
+string = "abc"
+del string
+
+```
+
+Q32. What is escape sequence?
+Ans: 
+To insert characters that are illegal in a string, use an escape sequence.
+An escape sequence is a backslash \ followed by the character you want to insert
+
+Q33. How can you print the below string?
+'iNeuron's Big Data Course'
+
+Ans:
+
+```python:
+string = "\'iNeuron's Big Data Course\'"
+print(string)
+```
+
+Q34. What is a list in Python?
+Ans: 
+
+
+
+
 
 
 
