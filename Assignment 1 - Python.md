@@ -47,18 +47,19 @@ Ans : Variable can be said as containers with data values.
 
 We can declare them like
 
-'''python:
+```python:
 a=7
 
 str=’abc’
-'''
+```
 
 Q6. How can we take an input from the user in Python?
 
 Ans : Syntax is
 
+```python:
 x=input("Enter anything.")
-
+```
 Q7. What is the default datatype of the value that has been taken as an input using input() function?
 
 Ans : By default, input returns a string.
@@ -67,13 +68,13 @@ Q8. What is type casting?
 
 Ans : As Python is a Dynamically Typed Language there may be times when you want to specify a type on to a variable. This can be done with casting.
 
-Syntax : x = int(1) 
+Syntax : ```python: x = int(1) ```
 
 Q9. Can we take more than one input from the user using single input() function? If yes, how? If no, why?
 
 Ans : Yes , we can do it with the help of split function. 
 
-Syntax : x, y = input("Enter two values: ").split()
+Syntax :  ```python: x, y = input("Enter two values: ").split() ```
 
 Q10. What are keywords?
 
@@ -93,7 +94,7 @@ Q13. How can we throw some output in Python?
 
 Ans : We can use the Print Statement. 
 
-Syntax : print(“abc”)
+Syntax : ```python: print(“abc”) ```
 
 Q14. What are operators in Python?
 
@@ -120,22 +121,23 @@ Floor division will work like floor(x/y)
 
 Q16. Write a code that gives following as an output.
 
-\```
 
 iNeuroniNeuroniNeuroniNeuron
 
-\```
 
 Ans : 
 
+```python:
 str=”iNeuron”
 
 print(4\*str)
 
+```
+
 Q17. Write a code to take a number as an input from the user and check if the number is odd or even.
 
 Ans :
-
+```python:
 ` `x=input("Enter the number")
 
 if ((int(x)%2) == 1):
@@ -145,6 +147,7 @@ if ((int(x)%2) == 1):
 else:
 
 `    `print("Even")
+```
 
 Q18. What are boolean operator?
 
@@ -155,7 +158,7 @@ Syntax : bool\_val = True
 
 Q19. What will the output of the following?
 
-\```
+
 
 1 or 0
 
@@ -165,7 +168,7 @@ True and False and True
 
 1 or 0 or 0
 
-\```
+
 
 Ans : 
 
@@ -199,6 +202,7 @@ Q22. Write a code to take the age of person as an input and if age >= 18 display
 
 Ans : 
 
+```python:
 x=input("Enter age")
 
 if int(x)>=18:
@@ -209,17 +213,16 @@ else:
 
 `    `print(" I can't vote")
 
-
+```
 Q23. Write a code that displays the sum of all the even numbers from the given list.
 
-\```
 
 numbers = [12, 75, 150, 180, 145, 525, 50]
 
-\```
 
 Ans : 
 
+```python:
 numbers = [12, 75, 150, 180, 145, 525, 50]
 
 
@@ -227,9 +230,11 @@ numbers = [12, 75, 150, 180, 145, 525, 50]
 for x in range(len(numbers)):
 
 `    `print(numbers[x])
+```
 
 Q24. Write a code to take 3 numbers as an input from the user and display the greatest no as output.
 
+```python:
 num1 = input()
 
 num2 = input()
@@ -250,7 +255,7 @@ else:
 
 print("The largest number is", largest)
 
-
+```
 Q25. Write a program to display only those numbers from a list that satisfy the following conditions
 
 \- The number must be divisible by five
@@ -259,12 +264,13 @@ Q25. Write a program to display only those numbers from a list that satisfy the 
 
 \- If the number is greater than 500, then stop the loop
 
-\```
+
 
 numbers = [12, 75, 150, 180, 145, 525, 50]
 
 Ans : 
 
+```python:
 numbers = [12, 75, 150, 180, 145, 525, 50]
 
 
@@ -285,7 +291,7 @@ for x in range(len(numbers)):
 
 `            `print(numbers[x])
 
-
+```
 
 
 
