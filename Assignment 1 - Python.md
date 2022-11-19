@@ -68,15 +68,21 @@ Q8. What is type casting?
 
 Ans : As Python is a Dynamically Typed Language there may be times when you want to specify a type on to a variable. This can be done with casting.
 
-Syntax :
-```python: x = int(1) ```
+Syntax is
+
+```python: 
+x = int(1) 
+```
 
 Q9. Can we take more than one input from the user using single input() function? If yes, how? If no, why?
 
 Ans : Yes , we can do it with the help of split function. 
 
-Syntax : 
-```python: x, y = input("Enter two values: ").split() ```
+Syntax is
+
+```python: 
+x, y = input("Enter two values: ").split()
+```
 
 Q10. What are keywords?
 
@@ -97,7 +103,9 @@ Q13. How can we throw some output in Python?
 Ans : We can use the Print Statement. 
 
 Syntax :
-```python: print(“abc”) ```
+```python:
+print(“abc”) 
+```
 
 Q14. What are operators in Python?
 
