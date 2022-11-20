@@ -361,6 +361,7 @@ del string
 ```
 
 Q32. What is escape sequence?
+
 Ans: 
 To insert characters that are illegal in a string, use an escape sequence.
 An escape sequence is a backslash \ followed by the character you want to insert
@@ -376,16 +377,19 @@ print(string)
 ```
 
 Q34. What is a list in Python?
+
 Ans: 
 Lists are used to store multiple items in a single variable.
 
 Q35. How can you create a list in Python?
+
 Ans:
 ```python:
 list=["a","b","c"]
 ```
 
 Q36. How can we access the elements in a list?
+
 Ans:
 ```python:
 list=["a","b","c"]
@@ -394,6 +398,7 @@ print(list[1])
 
 Q37. Write a code to access the word "iNeuron" from the given list.
 lst = [1,2,3,"Hi",[45,54, "iNeuron"], "Big Data"]
+
 Ans:
 ```python:
 list = [1,2,3,"Hi",[45,54, "iNeuron"], "Big Data"]
@@ -401,6 +406,7 @@ print(list[4][2])
 ```
 
 Q38. Take a list as an input from the user and find the length of the list.
+
 Ans:
 ```python:
 x = list(input("Enter values: ").split())
@@ -409,6 +415,7 @@ print("Length of list: ",len(x))
 
 Q39. Add the word "Big" in the 3rd index of the given list.
 lst = ["Welcome", "to", "Data", "course"]
+
 Ans:
 ```python:
 list = ["Welcome", "to", "Data", "course"]
@@ -417,11 +424,13 @@ print(list)
 ```
 
 Q40. What is a tuple? How is it different from list?
+
 Ans:
 The primary difference between tuples and lists is that tuples are immutable as opposed to lists which are mutable. 
 Therefore, it is possible to change a list but not a tuple.
 
 Q41. How can you create a tuple in Python?
+
 Ans:
 
 ```python:
@@ -429,10 +438,12 @@ tuple=("1","2","3")
 ```
 
 Q42. Create a tuple and try to add your name in the tuple. Are you able to do it? Support your answer with reason.
+
 Ans:
 No since the tuple is immutable we can't make any changes to the existing tuple.
 
 Q43. Can two tuple be appended. If yes, write a code for it. If not, why?
+
 Ans:
 ```python:
 tuple1=("1","2","3")
@@ -441,6 +452,7 @@ tuple3=tuple1+tuple2
 ```
 
 Q44. Take a tuple as an input and print the count of elements in it.
+
 Ans:
 ```python:
 x = tuple(input("Enter values: ").split())
@@ -448,6 +460,7 @@ print("Length of tuple: ",len(x))
 ```
 
 Q45. What are sets in Python?
+
 Ans:
 A Set is an unordered collection data type that is iterable, mutable and has no duplicate elements. 
 
@@ -458,6 +471,7 @@ var = {"A", "B", "C"}
 ```
 
 Q47. Create a set and add "iNeuron" in your set.
+
 Ans:
 ```python:
 var = {"A", "B", "C"}
@@ -465,28 +479,34 @@ var.add("iNeuron")
 ```
 
 Q48. Try to add multiple values using add() function.
+
 Ans:
 It throws an error as we can only add a single element
 
 Q49. How is update() different from add()?
+
 Ans:
 Update can add multiple elemnts to the set.
 
 Q50. What is clear() in sets?
+
 Ans:
 It will clear all the elements in the set.
 
 Q51. What is frozen set?
+
 Ans:
 Python frozenset() Method creates an immutable Set object from an iterable. It is a built-in Python function.
 As it is a set object therefore we cannot have duplicate values in the frozenset.
 
 Q52. How is frozen set different from set?
+
 Ans: 
 It is immutable while normal set are not.
 
 
 Q53. What is union() in sets? Explain via code.
+
 Ans:
 ```python:
 A = {0, 2, 4, 6, 8};
@@ -495,6 +515,7 @@ print("Union :", A | B)    #prints all the elements from both the sets
 ```
 
 Q54. What is intersection() in sets? Explain via code.
+
 Ans:
 ```python:
 A = {0, 2, 4, 6, 8};
@@ -503,15 +524,19 @@ print("Intersection :", A & B)   #prints the elements available in both the sets
 ```
 
 Q55. What is dictionary in Python?
+
 Ans:
 Dictionaries are used to store data values in key:value pairs.
 A dictionary is a collection which is ordered*, changeable and do not allow duplicates.
 
 Q56. How is dictionary different from all other data structures.
+
 Ans:
+
 It is differnt as other data structures conatins only value but dictionary calso contains the key for the value.
 
 Q57. How can we delare a dictionary in Python?
+
 Ans:
 ```python:
 thisdict = {
@@ -526,11 +551,13 @@ Q58. What will the output of the following?
 
 var = {}
 print(type(var))
+
 Ans:
 <class 'dict'>
 
 
 Q59. How can we add an element in a dictionary?
+
 Ans:
 The update() method will update the dictionary with the items from a given argument. If the item does not exist, the item will be added.
 ```
@@ -543,6 +570,7 @@ thisdict.update({"color": "red"})
 ```
 
 Q60. Create a dictionary and access all the values in that dictionary.
+
 Ans:
 
 ```
@@ -555,6 +583,7 @@ x = thisdict["model"]
 ```
 
 Q61. Create a nested dictionary and access all the element in the inner dictionary.
+
 Ans:
 ```pyhton:
 people = {1: {'name': 'John', 'age': '27', 'sex': 'Male'},
@@ -566,54 +595,67 @@ print(people[1]['sex'])
 ```
 
 Q62. What is the use of get() function?
+
 Ans:
 The get() method returns the value of the item with the specified key.
 
 Q63. What is the use of items() function?
+
 Ans:
 Returns a list containing a tuple for each key value pair
 
 Q64. What is the use of pop() function?
+
 Ans:
 Removes the element with the specified key
 
 Q65. What is the use of popitems() function?
+
 Ans:
 Removes the last inserted key-value pair
 
 Q66. What is the use of keys() function?
+
 Ans:
 Returns a list containing the dictionary's keys
 
 Q67. What is the use of values() function?
+
 Ans:
 Returns a list of all the values in the dictionary
 
 Q68. What are loops in Python?
+
 Ans:
 Looping means repeating something over and over until a particular condition is satisfied
 
 Q69. How many type of loop are there in Python?
+
 Ans:
 There are two types of loops in Python, for and while.
 
 Q70. What is the difference between for and while loops?
+
 Ans:
 A for loop in Python is used to iterate over a sequence while a The while loop is used to execute a set of statements as long as a condition is true.
 
 Q71. What is the use of continue statement?
+
 Ans:
 Continue statement is used to skip to the next iteration in the loop.
 
 Q72. What is the use of break statement?
+
 Ans:
 Break statement is used to break out of the loop. 
 
 Q73. What is the use of pass statement?
+
 Ans:
 The pass statement is used as a placeholder for future code.
 
 Q74. What is the use of range() function?
+
 Ans:
 The range() function returns a sequence of numbers, starting from 0 by default, and increments by 1 (by default), and stops before a specified number.
 
@@ -708,42 +750,5 @@ B B
 C C C 
 D D D D 
 E E E E E 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
