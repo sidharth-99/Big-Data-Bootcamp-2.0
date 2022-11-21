@@ -740,20 +740,38 @@ else:
 
 Q81. Write a Python program to find the n-th Fibonacci Number.
 Ans:
+
 ```python:
+x=int(input("Enter the number "))
+res=[0,1]
+
+for i in range(x-2):
+   res.append(int(res[-1])+int(res[-2]))
+   
+
+print("The n'th Fibonacii number is",res[-1])
 
 ```
 
 Q82. Write a Python program to interchange the first and last element in a list.
 Ans:
-```python:
 
+```python:
+list=[1,2,3,4]
+temp=list[0]
+list[0]=list[-1]
+list[-1]=temp
+print(list)
 ```
 
 Q83. Write a Python program to swap two elements in a list.
 Ans:
 ```python:
-
+list=[1,2,3,4]
+temp=list[0]
+list[0]=list[-1]
+list[-1]=temp
+print(list)
 ```
 
 Q84. Write a Python program to find N largest element from a list.
