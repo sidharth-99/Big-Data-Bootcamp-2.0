@@ -998,12 +998,13 @@ for i in range(1, rows+1):
 
 ```
 Q100. Write a python program to print below pattern.
-
+```
 A 
 B B 
 C C C 
 D D D D 
 E E E E E 
+```
 
 Ans:
 ```python:
