@@ -915,12 +915,13 @@ def Sort_Tuple(tup):
 
 ```
 Q96. Write a python program to print below pattern.
-
+```
 * 
 * * 
 * * * 
 * * * * 
 * * * * * 
+```
 Ans:
 
 ```python:
@@ -932,12 +933,13 @@ for i in range(1, rows + 1):
     print('')
 ```
 Q97. Write a python program to print below pattern.
-
+```
     *
    **
   ***
  ****
 *****
+```
 Ans:
 ```python:
 
@@ -953,12 +955,13 @@ for i in range(0, rows):
     
 ```
 Q98. Write a python program to print below pattern.
-
+```
     * 
    * * 
   * * * 
  * * * * 
 * * * * * 
+```
 
 Ans:
 ```python:
@@ -976,12 +979,13 @@ for i in range(0, n):
 
 ```
 Q99. Write a python program to print below pattern.
-
+```
 1 
 1 2 
 1 2 3 
 1 2 3 4 
 1 2 3 4 5
+```
 
 Ans:
 ```python:
