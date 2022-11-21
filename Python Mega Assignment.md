@@ -668,53 +668,175 @@ for x in thisdict:
 
 Coding problems
 Q76. Write a Python program to find the factorial of a given number.
+Ans:
+```python:
+x=int(input("Enter the number"))
+res=1
+for i in range(x,0,-1):
+    res=res*i
+
+print("Factorial is:", res)
+```
 
 Q77. Write a Python program to calculate the simple interest. Formula to calculate simple interest is SI = (PRT)/100
+```python:
+p=int(input("Enter the Principal "))
+r=int(input("Enter the Rate of Interest "))
+t=int(input("Enter the Time(in Years) "))
+
+print("Simple Interest is",(p*r*t)/100)
+```
+
 
 Q78. Write a Python program to calculate the compound interest. Formula of compound interest is A = P(1+ R/100)^t.
 
+```python:
+
+p=int(input("Enter the Principal "))
+r=int(input("Enter the Rate of Interest "))
+t=int(input("Enter the Time(in Years) "))
+
+print("Compound Interest is",p*((1+(r/100))**t ))
+
+
+```
+
 Q79. Write a Python program to check if a number is prime or not.
+Ans:
+```python:
+x=int(input("Enter the number "))
+res=1
+flag=False
+for i in range(2,x):
+    if(x%i==0):
+        flag=True
+        break
+
+if flag==True:
+    print("The number is non prime number")
+else:
+    print("the number is a prime number")
+```
+
 
 Q80. Write a Python program to check Armstrong Number.
+Ans:
+
+```python:
+num = int(input("Enter a number: "))
+sum = 0
+temp = num
+while temp > 0:
+   digit = temp % 10
+   print(digit)
+   sum += digit ** 3
+   temp //= 10
+
+if num == sum:
+   print(num,"is an Armstrong number")
+else:
+   print(num,"is not an Armstrong number")
+```
 
 Q81. Write a Python program to find the n-th Fibonacci Number.
+Ans:
+```python:
+
+```
 
 Q82. Write a Python program to interchange the first and last element in a list.
+Ans:
+```python:
+
+```
 
 Q83. Write a Python program to swap two elements in a list.
+Ans:
+```python:
+
+```
 
 Q84. Write a Python program to find N largest element from a list.
+Ans:
+```python:
+
+```
 
 Q85. Write a Python program to find cumulative sum of a list.
+Ans:
+```python:
+
+```
 
 Q86. Write a Python program to check if a string is palindrome or not.
+Ans:
+```python:
+
+```
 
 Q87. Write a Python program to remove i'th element from a string.
+Ans:
+```python:
+
+```
 
 Q88. Write a Python program to check if a substring is present in a given string.
+Ans:
+```python:
+
+```
 
 Q89. Write a Python program to find words which are greater than given length k.
+Ans:
+```python:
+
+```
 
 Q90. Write a Python program to extract unquire dictionary values.
+Ans:
+```python:
+
+```
 
 Q91. Write a Python program to merge two dictionary.
+Ans:
+```python:
+
+```
 
 Q92. Write a Python program to convert a list of tuples into dictionary.
 
 Input : [('Sachin', 10), ('MSD', 7), ('Kohli', 18), ('Rohit', 45)]
 Output : {'Sachin': 10, 'MSD': 7, 'Kohli': 18, 'Rohit': 45}
+Ans:
+```python:
+
+```
 Q93. Write a Python program to create a list of tuples from given list having number and its cube in each tuple.
 
 Input: list = [9, 5, 6]
 Output: [(9, 729), (5, 125), (6, 216)]
+Ans:
+```python:
+
+```
 Q94. Write a Python program to get all combinations of 2 tuples.
 
 Input : test_tuple1 = (7, 2), test_tuple2 = (7, 8)
 Output : [(7, 7), (7, 8), (2, 7), (2, 8), (7, 7), (7, 2), (8, 7), (8, 2)]
+Ans:
+```python:
+
+```
+
 Q95. Write a Python program to sort a list of tuples by second item.
 
 Input : [('for', 24), ('Geeks', 8), ('Geeks', 30)] 
 Output : [('Geeks', 8), ('for', 24), ('Geeks', 30)]
+Ans:
+```python:
+
+```
 Q96. Write a python program to print below pattern.
 
 * 
@@ -722,6 +844,10 @@ Q96. Write a python program to print below pattern.
 * * * 
 * * * * 
 * * * * * 
+Ans:
+```python:
+
+```
 Q97. Write a python program to print below pattern.
 
     *
@@ -729,6 +855,10 @@ Q97. Write a python program to print below pattern.
   ***
  ****
 *****
+Ans:
+```python:
+
+```
 Q98. Write a python program to print below pattern.
 
     * 
@@ -736,6 +866,10 @@ Q98. Write a python program to print below pattern.
   * * * 
  * * * * 
 * * * * * 
+Ans:
+```python:
+
+```
 Q99. Write a python program to print below pattern.
 
 1 
@@ -743,6 +877,10 @@ Q99. Write a python program to print below pattern.
 1 2 3 
 1 2 3 4 
 1 2 3 4 5
+Ans:
+```python:
+
+```
 Q100. Write a python program to print below pattern.
 
 A 
@@ -750,5 +888,9 @@ B B
 C C C 
 D D D D 
 E E E E E 
+Ans:
+```python:
+
+```
 
 
