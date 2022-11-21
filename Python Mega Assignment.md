@@ -777,49 +777,90 @@ print(list)
 Q84. Write a Python program to find N largest element from a list.
 Ans:
 ```python:
-
+l=[1,2,3,4]
+l.sort(reverse=True)
+n=input()
+print(l[:n])
 ```
 
 Q85. Write a Python program to find cumulative sum of a list.
 Ans:
 ```python:
+import functools
+
+lis = [1, 3, 5, 6, 2]
+ 
+print("The sum of the list elements is : ", end="")
+print(functools.reduce(lambda a, b: a+b, lis))
+ 
+
 
 ```
 
 Q86. Write a Python program to check if a string is palindrome or not.
 Ans:
 ```python:
+string="aabaa"
+if string==string[::-1]:
+    print("Palindrome")
+else:
+    print("Not a paindrome")
 
 ```
 
 Q87. Write a Python program to remove i'th element from a string.
 Ans:
 ```python:
-
+string="abcdefgh"
+i=int(input("Enter the i'th element"))
+string1=string[:i-1]
+string2=string[i:]
+string=string1+string2
+print(string)
 ```
 
 Q88. Write a Python program to check if a substring is present in a given string.
 Ans:
 ```python:
+string = "abcdefghi"
+ 
+if "abc" in string:
+    print("Yes! it is present in the string")
+else:
+    print("No! it is not present")
+
 
 ```
 
 Q89. Write a Python program to find words which are greater than given length k.
 Ans:
 ```python:
+string="a bcd efg dbfkjdbjf"
+k=4
+for i in string.split():
+    if len(i)>=k:
+        print(i)
+    else:
+        continue
 
 ```
 
 Q90. Write a Python program to extract unquire dictionary values.
 Ans:
 ```python:
-
+test_list = [{'gfg': 1, 'is': 2}, {'best': 1, 'for': 3}, {'CS': 2}]
+ 
+print("The original list : " + str(test_list))
+res = list(set(val for dic in test_list for val in dic.values()))
+print("The unique values in list are : " + str(res))
 ```
 
 Q91. Write a Python program to merge two dictionary.
 Ans:
 ```python:
-
+dict1 = {'a': 10, 'b': 8}
+dict2 = {'d': 6, 'c': 4}
+dict2.update(dict1)
 ```
 
 Q92. Write a Python program to convert a list of tuples into dictionary.
@@ -828,6 +869,10 @@ Input : [('Sachin', 10), ('MSD', 7), ('Kohli', 18), ('Rohit', 45)]
 Output : {'Sachin': 10, 'MSD': 7, 'Kohli': 18, 'Rohit': 45}
 Ans:
 ```python:
+tups = [("akash", 10), ("gaurav", 12), ("anand", 14), 
+    ("suraj", 20), ("akhil", 25), ("ashish", 30)]
+dictionary = dict(tup)
+print(disctionary)
 
 ```
 Q93. Write a Python program to create a list of tuples from given list having number and its cube in each tuple.
@@ -836,6 +881,8 @@ Input: list = [9, 5, 6]
 Output: [(9, 729), (5, 125), (6, 216)]
 Ans:
 ```python:
+list1 = [9, 5, 6]
+res = [(val, pow(val, 3)) for val in list1]
 
 ```
 Q94. Write a Python program to get all combinations of 2 tuples.
@@ -845,6 +892,11 @@ Output : [(7, 7), (7, 8), (2, 7), (2, 8), (7, 7), (7, 2), (8, 7), (8, 2)]
 Ans:
 ```python:
 
+a=(7,2) 
+b=(7,8)
+res =  [(a, b) for a in test_tuple1 for b in test_tuple2]
+res = res +  [(a, b) for a in test_tuple2 for b in test_tuple1]
+
 ```
 
 Q95. Write a Python program to sort a list of tuples by second item.
@@ -853,6 +905,13 @@ Input : [('for', 24), ('Geeks', 8), ('Geeks', 30)]
 Output : [('Geeks', 8), ('for', 24), ('Geeks', 30)]
 Ans:
 ```python:
+def Sort_Tuple(tup):
+    tup.sort(key = lambda x: x[1])
+    return tup
+ 
+ tup =  [('for', 24), ('Geeks', 8), ('Geeks', 30)]
+ 
+ print(Sort_Tuple(tup))
 
 ```
 Q96. Write a python program to print below pattern.
@@ -863,8 +922,14 @@ Q96. Write a python program to print below pattern.
 * * * * 
 * * * * * 
 Ans:
+
 ```python:
 
+rows = 5
+for i in range(1, rows + 1):
+    for j in range(1, i + 1):
+        print("*", end=' ')
+    print('')
 ```
 Q97. Write a python program to print below pattern.
 
@@ -876,6 +941,16 @@ Q97. Write a python program to print below pattern.
 Ans:
 ```python:
 
+rows = int(input("Enter the number of rows:"))  
+k = 2 * rows - 2 
+for i in range(0, rows):  
+    for j in range(0, k):  
+        print(end=" ")  
+    k = k - 2     
+    for j in range(0, i + 1):  
+        print("* ", end="") 
+    print("")  
+    
 ```
 Q98. Write a python program to print below pattern.
 
@@ -884,8 +959,20 @@ Q98. Write a python program to print below pattern.
   * * * 
  * * * * 
 * * * * * 
+
 Ans:
 ```python:
+n = int(input("Enter the number of rows: "))  
+m = (2 * n) - 2  
+for i in range(0, n):  
+    for j in range(0, m):  
+        print(end=" ")  
+    m = m - 1  # decrementing m after each loop  
+    for j in range(0, i + 1):  
+        # printing full Triangle pyramid using stars  
+        print("* ", end=' ')  
+    print(" ")  
+
 
 ```
 Q99. Write a python program to print below pattern.
@@ -895,8 +982,19 @@ Q99. Write a python program to print below pattern.
 1 2 3 
 1 2 3 4 
 1 2 3 4 5
+
 Ans:
 ```python:
+
+rows = int(input("Enter the number of rows: "))  
+  
+# This will print the rows  
+for i in range(1, rows+1):  
+    # This will print number of column  
+    for j in range(1, i + 1):  
+        print(j, end=' ')  
+    print("")  
+
 
 ```
 Q100. Write a python program to print below pattern.
@@ -906,8 +1004,15 @@ B B
 C C C 
 D D D D 
 E E E E E 
+
 Ans:
 ```python:
+
+for i in range (65,70):
+    # inner loop
+    for j in range(65,i+1):
+        print(chr(i),end="")
+    print()
 
 ```
 
