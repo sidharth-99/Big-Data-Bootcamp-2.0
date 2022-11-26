@@ -1,10 +1,13 @@
+
 Q1. What is the purpose of Python's OOP?
+
 Ans:
 Object-oriented Programming (OOPs) is a programming paradigm that uses objects and classes in programming. It aims to implement real-world entities like inheritance, polymorphisms, encapsulation, etc. in the programming.
 
 Q2. Where does an inheritance search look for an attribute?
+
 Ans:
- An inheritance search looks for an attribute first in the instance object, then in the class the instance was created from, then in all higher superclasses, progressing from left to right (by default). The search stops at the first place the attribute is found.
+An inheritance search looks for an attribute first in the instance object, then in the class the instance was created from, then in all higher superclasses, progressing from left to right (by default). The search stops at the first place the attribute is found.
 
 
 Q3. How do you distinguish between a class object and an instance object?
