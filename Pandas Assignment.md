@@ -158,15 +158,39 @@ corr = df['A'].corr(df['B'])
 
 Q20. How do you select specific columns in a DataFrame using their labels?
 
-Ans: We can use the functions 'loc' or [] method.
+Ans: To select specific columns in a DataFrame using their labels, you can use the DataFrame's [ ], loc and iloc method.
 
 Q21. How do you select specific rows in a DataFrame using their indexes?
 
+Ans: To select specific rows in a DataFrame using their indexes, you can use the DataFrame's iloc or loc method
+```
+df.loc[:,'col']
+```
 
 Q22. How do you sort a DataFrame by a specific column?
 
+Ans: To sort a DataFrame by a specific column, you can use the DataFrame's sort_values method.
+```
+df = df.sort_values(by="col")
+```
+
 Q23. How do you create a new column in a DataFrame based on the values of another column?
+
+Ans: To create a new column in a DataFrame based on the values of another column, you can use the DataFrame's apply method. For example, suppose you have a DataFrame with a column A and you want to create a new column B that contains the square of the values in column A. You could use the following code to do this:
+```
+df["B"] = df["A"].apply(lambda x: x**2)
+```
+
 
 Q24. How do you remove duplicates from a DataFrame?
 
+Ans: To remove duplicates from a DataFrame, you can use the DataFrame's drop_duplicates method
+```
+df = df.drop_duplicates(subset=["A", "B"])
+```
+
 Q25. What is the difference between .loc and .iloc in Pandas?
+
+Ans: The .loc and .iloc methods are both used to access and manipulate data in a Pandas DataFrame. The main difference between these methods is that .loc uses labels to identify rows and columns, while .iloc uses integer indexes.
+
+
