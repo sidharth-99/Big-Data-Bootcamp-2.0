@@ -5,7 +5,7 @@ Q1. How do you load a CSV file into a Pandas DataFrame?
 Ans: 
 ```
 import pandas as pd
-df=p.read_csv("File Path")
+df=pd.read_csv("File Path")
 
 ```
 
